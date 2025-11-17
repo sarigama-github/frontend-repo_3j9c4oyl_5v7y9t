@@ -50,22 +50,31 @@ export default function Hero() {
 
           <div className="lg:col-span-5">
             <div className="relative rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
-              <div className="aspect-[4/5] bg-gradient-to-br from-fuchsia-100 via-white to-blue-100" />
-              <div className="absolute inset-0 p-5 flex flex-col gap-3">
-                <div className="bg-white/90 rounded-xl p-4 border border-gray-200 shadow-sm">
+              {/* Primary showcase image */}
+              <img
+                src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed7?q=80&w=1400&auto=format&fit=crop"
+                alt="Mackupstudio project preview"
+                className="aspect-[4/5] w-full object-cover"
+                loading="eager"
+              />
+
+              {/* Floating UI cards for depth */}
+              <div className="pointer-events-none absolute inset-0 p-5 flex flex-col gap-3">
+                <div className="bg-white/90 backdrop-blur rounded-xl p-4 border border-gray-200 shadow-sm">
                   <div className="h-3 w-20 bg-gray-900 rounded-full" />
                   <div className="mt-2 h-2 w-40 bg-gray-300 rounded-full" />
                 </div>
-                <div className="ml-auto bg-white/90 rounded-xl p-4 border border-gray-200 shadow-sm">
+                <div className="ml-auto bg-white/90 backdrop-blur rounded-xl p-4 border border-gray-200 shadow-sm">
                   <div className="h-3 w-24 bg-gray-900 rounded-full" />
                   <div className="mt-2 h-2 w-36 bg-gray-300 rounded-full" />
                 </div>
-                <div className="bg-white/90 rounded-xl p-4 border border-gray-200 shadow-sm">
+                <div className="bg-white/90 backdrop-blur rounded-xl p-4 border border-gray-200 shadow-sm">
                   <div className="h-3 w-28 bg-gray-900 rounded-full" />
                   <div className="mt-2 h-2 w-32 bg-gray-300 rounded-full" />
                 </div>
               </div>
             </div>
+            <p className="mt-3 text-xs text-gray-500 text-center">Swap this image with your brand shot or product UI — just share the file or a link.</p>
           </div>
         </div>
       </div>
